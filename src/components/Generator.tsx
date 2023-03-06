@@ -182,7 +182,7 @@ export default () => {
             ref={inputRef!}
             disabled={systemRoleEditing()}
             onKeyDown={handleKeydown}
-            placeholder="输入内容..."
+            placeholder="你想用ai做什么..."
             autocomplete="off"
             autofocus
             onInput={() => {
@@ -207,7 +207,7 @@ export default () => {
             scroll-pa-8px
           />
           <button onClick={handleButtonClick} disabled={systemRoleEditing()} h-12 px-4 py-2 bg-slate bg-op-15 hover:bg-op-20 text-slate rounded-sm>
-            发送
+            OK
           </button>
           <button title="Clear" onClick={clear} disabled={systemRoleEditing()} h-12 px-4 py-2 bg-slate bg-op-15 hover:bg-op-20 text-slate rounded-sm>
             <IconClear />
