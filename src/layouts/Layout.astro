@@ -16,6 +16,17 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		{ import.meta.env.HEAD_SCRIPTS ? <Fragment set:html={import.meta.env.HEAD_SCRIPTS} /> : null }
+		
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?b9bd8272076e92b7ad628fe985cb1bf9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 	</head>
 	<body>
 		<slot />
